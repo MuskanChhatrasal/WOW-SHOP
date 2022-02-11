@@ -39,8 +39,8 @@ header .left-container a {
 }
 
 header .navbar {
-  margin-left: -30rem;
-  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
 }
 header .navbar a {
   font-size: 1rem;
@@ -116,7 +116,7 @@ header .icons a:hover {
 }
 
 .serach-box {
-  width: 20rem;
+  width: 28rem;
 }
 
 .btn {
