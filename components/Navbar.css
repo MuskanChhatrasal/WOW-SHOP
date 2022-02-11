@@ -5,7 +5,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #fff;
+  background: var(--text-white);
   padding: 1rem 5%;
   display: flex;
   align-items: center;
@@ -26,7 +26,6 @@ header .logo {
   color: var(--primary-dark-color);
   margin-top: -3.5rem;
   margin-left: 4rem;
-  /* margin: 0.1rem; */
   font-family: "Permanent Marker", sans-serif;
 }
 
@@ -45,7 +44,7 @@ header .navbar {
 header .navbar a {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--primary-color);
   margin: 0 1rem;
   text-decoration: none;
 }
@@ -80,19 +79,19 @@ header .navbar a:hover {
 }
 header .icons a {
   font-size: 1.6rem;
-  color: var(--black);
+  color: var(--primary-color);
   margin-left: 1.2rem;
 }
 
 header .icons a:hover {
   color: var(--primary-dark-color);
-  background-color: white;
+  background-color: var(--text-white);
 }
 
 #menu-bar {
   font-size: 2.5rem;
   padding: 0.5rem 1.5rem;
-  border: 0.1rem solid var(--black);
+  border: 0.1rem solid var(--primary-color);
   color: var(--black);
   border-radius: 0.3rem;
   cursor: pointer;
@@ -112,7 +111,7 @@ header .icons a:hover {
   line-height: 2.375rem;
   text-align: center;
   pointer-events: none;
-  color: #aaa;
+  color: var(--text-lighter);
 }
 
 .serach-box {
@@ -140,7 +139,6 @@ header .icons a:hover {
   right: 0;
   width: 0%;
   height: 100%;
-  background: var(--red);
   transition: 0.3s linear;
   z-index: -1;
 }
@@ -249,7 +247,7 @@ header .icons a:hover {
   header .navbar a {
     font-size: 2rem;
     background: #fff;
-    border: 0.1rem solid var(--black);
+    border: 0.1rem solid var(--primary-color);
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1.5rem;
@@ -282,6 +280,6 @@ header .icons a:hover {
 
   header .logo {
     font-size: 2.2rem;
-    border: 0.2rem solid #ffffff;
+    border: 0.2rem solid var(--text-white);
   }
 }
