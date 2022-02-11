@@ -166,19 +166,19 @@ header .icons a:hover {
 }
 
 .home .content {
-  flex: 1 1 40rem;
+  flex: 1 1 31rem;
   padding-top: 6.5rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 42rem;
 }
 
 .home .image img {
   width: 70%;
   padding: 1rem;
-  margin-left: 6rem;
+  margin-left: 10rem;
   animation: float 3s linear infinite;
 }
 
