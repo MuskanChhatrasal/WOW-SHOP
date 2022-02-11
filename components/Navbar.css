@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,900&display=swap");
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 1rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo-img {
+  height: 6rem;
+  width: 9rem;
+  margin-left: -5rem;
+  margin-top: -1rem;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-dark-color);
+  margin-top: -3.5rem;
+  margin-left: 1.8rem;
+  /* margin: 0.1rem; */
+  font-family: "Permanent Marker", sans-serif;
+}
+
+header .left-container {
+  display: flex;
+  flex-direction: column;
+}
+header .left-container a {
+  text-decoration: none;
+}
+
+header .navbar {
+  margin-left: -32rem;
+  margin-top: 2rem;
+}
+header .navbar a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+header .navbar a:hover {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-color);
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-dark-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+header .icons a {
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-left: 1.2rem;
+}
+
+header .icons a:hover {
+  color: var(--primary-dark-color);
+  background-color: white;
+}
+
+#menu-bar {
+  font-size: 2.5rem;
+  padding: 0.5rem 1.5rem;
+  border: 0.1rem solid var(--black);
+  color: var(--black);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.serach-box {
+  width: 20rem;
+}
+
+/* .button {
+  min-width: 100px;
+  padding: 0.8rem;
+  margin: 14px;
+  margin-left: 2px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--text-white);
+  border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+  background-color: var(--primary-color);
+} */
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  header .logo {
+    font-size: 2.8rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: -120%;
+    width: 100%;
+    background: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  header .navbar.active {
+    left: 0;
+  }
+
+  header .logo {
+    font-size: 2.4rem;
+  }
+
+  header .navbar a {
+    font-size: 2rem;
+    background: #fff;
+    border: 0.1rem solid var(--black);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    display: block;
+    text-align: center;
+  }
+
+  .home .slide-container .slide .image .text {
+    width: 60%;
+  }
+
+  .home #prev,
+  .home #next {
+    top: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .slide-container .slide .image {
+    padding-bottom: 6rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  header .logo {
+    font-size: 2.2rem;
+    border: 0.2rem solid #ffffff;
+  }
+}
