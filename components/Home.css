@@ -1,28 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-:root {
-  --black: #130f40;
-  --light-color: #666;
-  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
-  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --outline-hover: 0.2rem solid var(--primary-color);
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
-}
-
-body {
-  background: var(--background-color);
-}
-
-section {
-  padding: 2rem 9%;
-}
-
 .heading {
   text-align: center;
   padding: 2rem 0;
@@ -186,22 +163,22 @@ section {
   top: 50%;
   right: 2rem;
   cursor: pointer;
-  color: var(--light-color);
+  color: var(--text-light);
   transform: translateY(-50%);
 }
 
 .header .shopping-cart .box .fa-trash:hover {
-  color: var(--orange);
+  color: var(--primary-dark-color);
 }
 
 .header .shopping-cart .box .content h3 {
-  color: var(--black);
+  color: var(--primary-color);
   font-size: 1.7rem;
   padding-bottom: 1rem;
 }
 
 .header .shopping-cart .box .content span {
-  color: var(--light-color);
+  color: var(--text-light);
   font-size: 1.6rem;
 }
 
@@ -213,7 +190,7 @@ section {
   font-size: 2.5rem;
   padding: 1rem 0;
   text-align: center;
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 .header .shopping-cart .btn {
@@ -230,7 +207,7 @@ section {
   box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: 0.5rem;
-  background: #fff;
+  background: var(--text-white);
   text-align: center;
 }
 
@@ -248,7 +225,7 @@ section {
 .header .login-form .box {
   width: 100%;
   margin: 0.7rem 0;
-  background: #eee;
+  background: var(--text-light);
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1.6rem;
@@ -259,11 +236,11 @@ section {
 .header .login-form p {
   font-size: 1.4rem;
   padding: 0.5rem 0;
-  color: var(--light-color);
+  color: var(--text-light);
 }
 
 .header .login-form p a {
-  color: var(--orange);
+  color: var(--primary-dark-color);
   text-decoration: underline;
 }
 
@@ -284,16 +261,16 @@ section {
 }
 
 .home .content h3 {
-  color: var(--black);
+  color: var(--primary-color);
   font-size: 3rem;
 }
 
 .home .content h3 span {
-  color: var(--orange);
+  color: var(--primary-dark-color);
 }
 
 .home .content p {
-  color: var(--light-color);
+  color: var(--text-light);
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 1.8;
@@ -307,7 +284,7 @@ section {
 
 .features .box-container .box {
   padding: 3rem 2rem;
-  background: #fff;
+  background: var(--text-white);
   outline: var(--outline);
   outline-offset: -1rem;
   text-align: center;
@@ -367,7 +344,7 @@ section {
 
 .products .product-slider .box h3 {
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 .products .product-slider .box .price {
@@ -378,7 +355,7 @@ section {
 
 .products .product-slider .box .stars i {
   font-size: 1.7rem;
-  color: var(--orange);
+  color: var(--primary-dark-color);
   padding: 0.5rem 0;
 }
 
@@ -410,7 +387,7 @@ section {
 
 .categories .box-container .box h3 {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--primary-color);
   line-height: 1.8;
 }
 
@@ -426,7 +403,7 @@ section {
 }
 
 .review .review-slider .box {
-  background: #fff;
+  background: var(--text-white);
   border-radius: 0.5rem;
   text-align: center;
   padding: 3rem 2rem;
@@ -450,18 +427,18 @@ section {
 .review .review-slider .box p {
   padding: 1rem 0;
   line-height: 1.8;
-  color: var(--light-color);
+  color: var(--text-light);
   font-size: 1.5rem;
 }
 
 .review .review-slider .box h3 {
   padding-bottom: 0.5rem;
-  color: var(--black);
+  color: var(--primary-color);
   font-size: 2.2rem;
 }
 
 .review .review-slider .box .stars i {
-  color: var(--orange);
+  color: var(--primary-dark-color);
   font-size: 1.7rem;
 }
 
@@ -498,35 +475,35 @@ section {
 }
 
 .blogs .box-container .box .content .icons a {
-  color: var(--light-color);
+  color: var(--text-light);
   font-size: 1.5rem;
 }
 
 .blogs .box-container .box .content .icons a:hover {
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 .blogs .box-container .box .content .icons a i {
-  color: var(--orange);
+  color: var(--primary-dark-color);
   padding-right: 0.5rem;
 }
 
 .blogs .box-container .box .content h3 {
   line-height: 1.8;
-  color: var(--black);
+  color: var(--primary-color);
   font-size: 2.2rem;
   padding: 0.5rem 0;
 }
 
 .blogs .box-container .box .content p {
   line-height: 1.8;
-  color: var(--light-color);
+  color: var(--text-light);
   font-size: 1.5rem;
   padding: 0.5rem 0;
 }
 
 .footer {
-  background: #fff;
+  background: var(--text-white);
 }
 
 .footer .box-container {
@@ -537,23 +514,23 @@ section {
 
 .footer .box-container .box h3 {
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--primary-color);
   padding: 1rem 0;
 }
 
 .footer .box-container .box h3 i {
-  color: var(--orange);
+  color: var(--primary-dark-color);
 }
 
 .footer .box-container .box .links {
   display: block;
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: var(--text-light);
   padding: 1rem 0;
 }
 
 .footer .box-container .box .links i {
-  color: var(--orange);
+  color: var(--primary-dark-color);
   padding-right: 0.5rem;
 }
 
@@ -564,7 +541,7 @@ section {
 .footer .box-container .box p {
   line-height: 1.8;
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: var(--text-light);
   padding: 1rem 0;
 }
 
@@ -576,13 +553,13 @@ section {
   font-size: 2rem;
   color: var(--black);
   margin-right: 0.2rem;
-  background: #eee;
+  background: var(--background-color);
   text-align: center;
 }
 
 .footer .box-container .box .share a:hover {
-  background: var(--orange);
-  color: #fff;
+  background: var(--primary-dark-color);
+  color: var(--text-white);
 }
 
 .footer .box-container .box .email {
@@ -590,7 +567,7 @@ section {
   margin: 0.7rem 0;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: #eee;
+  background: var(--background-color);
   font-size: 1.6rem;
   color: var(--black);
   text-transform: none;
@@ -608,7 +585,7 @@ section {
   padding: 1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
-  color: var(--black);
+  color: var(--primary-color);
   border-top: var(--border);
 }
 
