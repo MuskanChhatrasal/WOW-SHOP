@@ -1,66 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>WOW SHOP</title>
-</head>
-<body>
-    <!-- Header section starts -->
+    <title>Wow Shop</title>
 
-    <header>
-        <div id="menu-bar" class="fas fa-bars"></div>
-    
-        <div class="left-container">
-           <img src="./assets/logo.png" class='logo-img' alt="" srcset="">
-           <a href="#" class="logo">
-            WOW SHOP</a>
-        </div>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://wow-ui02.netlify.app/wowi.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Wow shop </a>
+
         <nav class="navbar">
-            <a href="#home" class="hover-underline-animation">Home</a>
-            <a href="#products" class="hover-underline-animation">Order Now</a>
-            <div class="form-group has-search serach-box">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
+            <a href="#home">home</a>
+            <a href="#speciality">Offer</a>
+            <a href="#products">products</a>
+            <a href="#categories">Wishlist</a>
         </nav>
-        
+
         <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-user"></a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"><a href="./Pages/cart.html"></a></div>
+            <div class="fas fa-user" id="login-btn"><a href="./Pages/login.html"></a></div>
         </div>
-        
+
+
     </header>
 
-    <!-- Header section ends -->
+    <!-- header section ends -->
 
+    <!-- home section starts  -->
 
-    <!-- Home section start -->
-
-   
     <section class="home" id="home">
-    
+
         <div class="content">
-            <h3>Food made with love</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet
-                laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem
-                quisquam eos!</p>
-            <a href="#" class="btn">order now</a>
+            <h3>Food made with <span>love</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore
+                nisi.</p>
+            <a href="#" class="btn">shop now</a>
         </div>
-    
-        <div class="image">
-            <img src="assets/home-img.png" alt="home-img">
-        </div>
-    
+
     </section>
 
-    <!-- Home section end -->
-    
+    <!-- home section ends -->
+
+    <!-- Offer section starts  -->
+
+    <section class="speciality" id="speciality">
+
+        <h1 class="heading"> <span>50% OFF ON</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="image/s-img-1.jpg" alt="burger">
+                <div class="content">
+                    <img src="image/s-1.png" alt="burger">
+                    <h3>tasty burger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
+                        aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="image" src="image/s-img-2.jpg" alt="pizza">
+                <div class="content">
+                    <img src="image/s-2.png" alt="pizza">
+                    <h3>tasty pizza</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
+                        aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="image" src="image/s-img-3.jpg" alt="ice-cream">
+                <div class="content">
+                    <img src="image/s-3.png" alt="ice-cream">
+                    <h3>cold ice-cream</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
+                        aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Offer section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span>products</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/s-img-1.jpg" alt="burger">
+                    <h3>Burger</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/s-img-2.jpg" alt="pizza">
+                    <h3>Pizza</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/s-img-3.jpg" alt="Ice-cream">
+                    <h3>Ice Cream</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/s-img-4.jpg" alt="cold-drink">
+                    <h3>Cold Drinks</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="btn product-btn">View All Products</a>
+
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Wow Shop <i class="fas fa-shopping-basket"></i> </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> 123@gamil.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> offer </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span> Muskan </span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
