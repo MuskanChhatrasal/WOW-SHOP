@@ -110,6 +110,66 @@ label h3 {
   padding: 0.5rem 0;
 }
 
+.footer {
+  background: var(--text-white);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: var(--primary-dark-color);
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: var(--primary-dark-color);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-right: 0.2rem;
+  background: var(--background-color);
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: var(--primary-dark-color);
+  color: var(--text-white);
+}
+
 a {
   text-decoration: none;
 }
