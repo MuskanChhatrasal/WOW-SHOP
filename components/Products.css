@@ -1,0 +1,171 @@
+.main-container {
+  display: flex;
+}
+.filters {
+  background-color: var(--primary-dark-color);
+  color: var(--text-white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: 9rem;
+  margin-left: -12rem;
+  height: 82vh;
+}
+
+.filters > span {
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-size: 28px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+label h3 {
+  margin-left: 2.5rem;
+  margin-top: -2.6rem;
+  font-weight: 300;
+}
+
+.filter-btn {
+  background-color: var(--text-white);
+  border: none;
+  color: var(--primary-dark-color);
+  margin-top: 3rem;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-dark-color);
+  border: 2px solid var(--primary-color);
+  color: var(--text-white);
+}
+
+.filter-rating {
+  margin-left: 0rem;
+  margin-top: 2rem;
+}
+
+.filter-stars {
+  margin-left: 7rem;
+  margin-top: -2.4rem;
+  font-size: 1.2rem;
+}
+
+.categories .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7.5rem;
+  gap: 2rem;
+}
+
+.categories .box-container .box {
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  background: var(--text-white);
+  box-shadow: var(--box-shadow);
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+
+.categories .box-container .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+
+.categories .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+.categories .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.categories .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.stars i {
+  font-size: 1.7rem;
+  color: var(--primary-dark-color);
+  padding: 0.5rem 0;
+}
+.footer {
+  background: var(--text-white);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: var(--primary-dark-color);
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: var(--primary-dark-color);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-right: 0.2rem;
+  background: var(--background-color);
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: var(--primary-dark-color);
+  color: var(--text-white);
+}
+
+a {
+  text-decoration: none;
+}
