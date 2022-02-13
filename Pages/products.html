@@ -25,9 +25,9 @@
         <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Wow shop </a>
     
         <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#speciality">Offer</a>
-            <a href="#products">products</a>
+            <a href="../index.html">home</a>
+            <a href="../index.html#speciality">Offer</a>
+            <a href="/">products</a>
             <a href="#categories">Wishlist</a>
         </nav>
     
@@ -44,7 +44,7 @@
 
     <!-- Filter Section Starts -->
 
-    <section>
+    <section class="main-container">
         <div class="filters">
             <span class="title">Filter Products</span>
             <span>
@@ -72,9 +72,17 @@
                   <input type="checkbox" name="group1"> <h3>Fast Delivery Only</h3>
                 </label>
             </span>
+            <span>
+               <label style="font-size: 1.8rem;">Category: </label>
+                  <select style="margin-left: 1rem; width: 10rem;">
+                     <option value="volvo">Chineese</option>
+                     <option value="saab">Indian</option>
+                     <option value="opel">Italian</option>
+                  </select>
+            </span>
             <label>
-                    <h3 class="rating">Rating: </h3>
-                    <div class="stars">
+                    <h3 class="filter-rating">Rating: </h3>
+                    <div class="filter-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -84,8 +92,61 @@
             </label>
             <button class="btn filter-btn">Clear Filters</button>
         </div>
-    </section>
 
+        <section class="categories" id="categories">
+        
+            <!-- <h1 class="heading"> product <span>categories</span> </h1> -->
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="../image/s-img-1.jpg" alt="burger">
+                    <h3>Burger</h3>
+                    <div class="price"> $4.99/- -10.99/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+        
+                <div class="box">
+                    <img src="../image/s-img-2.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <div class="price"> $4.99/- -10.99/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="../image/s-img-3.jpg" alt="ice-cream">
+                    <h3>Ice-cream</h3>
+                    <div class="price"> $4.99/- -10.99/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- categories section ends -->
+    </section>
+    
     
 </body>
 </html>
