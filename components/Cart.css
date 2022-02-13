@@ -4,7 +4,7 @@
 
 .productContainer {
   display: flex;
-  /* width: 78%; */
+  width: 78%;
   padding: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   margin-top: 10rem;
   gap: 2rem;
-  width: 100rem;
+  width: 72rem;
 }
 
 .productContainer .box-container .box {
@@ -73,7 +73,8 @@
 
 .summary {
   margin-top: 12rem;
-  margin-left: 10rem;
+  /* margin-left: 2rem; */
+  margin-left: -5rem;
   width: 25%;
 }
 
@@ -84,7 +85,7 @@
   margin-top: 3rem;
   height: 5rem;
   border-radius: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
 
