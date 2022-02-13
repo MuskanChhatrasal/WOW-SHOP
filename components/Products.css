@@ -61,7 +61,7 @@ label h3 {
   gap: 1.5rem; */
   display: flex;
   flex-wrap: wrap;
-  margin-top: 7rem;
+  margin-top: 7.5rem;
   gap: 2rem;
 }
 
@@ -109,7 +109,6 @@ label h3 {
   color: var(--primary-dark-color);
   padding: 0.5rem 0;
 }
-
 .footer {
   background: var(--text-white);
 }
