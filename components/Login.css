@@ -38,7 +38,7 @@ form .input-box input {
   padding: 0 1rem;
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--text-white);
+  color: var(--primary-color);
   border: 0.1rem solid var(--background-color);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
