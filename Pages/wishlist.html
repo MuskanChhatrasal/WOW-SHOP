@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+
     <link rel="stylesheet" href="https://wow-ui02.netlify.app/wowi.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="../styles.css">
+
     <title>Wow Shop</title>
 </head>
-<body>
 
+<body>
     <!-- header section starts  -->
-    
+
     <header class="header">
-    
-        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Wow shop </a>
-    
+
+        <a href="../index.html" class="logo"> <i class="fas fa-shopping-basket"></i> Wow shop </a>
+
         <nav class="navbar">
             <a href="../index.html">home</a>
             <a href="../index.html#speciality">Offer</a>
             <a href="./products.html">products</a>
-            <a href="./wishlist.html">Wishlist</a>
-            <a href="/">Cart</a>
+            <a href="/">Wishlist</a>
+            <a href="./cart.html">Cart</a>
             <a href="./login.html">Login</a>
         </nav>
-    
+
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"><a href="/"></a></div>
-            <div class="fas fa-user" id="login-btn"><a href="./login.html"></a></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"><a href="./cart.html"></a></div>
+            <div class="fas fa-user" id="login-btn"><a href="./Pages/login.html"></a></div>
         </div>
-    
-    
-    </header>
-    
-    <!-- header section ends -->
 
+    </header>
+
+    <section class="categories" id="categories">
     
-    <div class="cart-container">
-        <div class="productContainer">
-            <div class="box-container">
-            
-                <div class="box">
-                    <img src="../image/s-img-1.jpg" alt="burger">
-                    <h3>Burger</h3>
-                    <div class="price"> $4.99/- -10.99/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="button"><i class="fas fa-trash"></i></a>
+        <h1 class="wishlist-title">Wishlist</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="../image/s-img-1.jpg" alt="burger">
+                <h3>Burger</h3>
+                <div class="price"> $4.99/- -10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
-            
-                <div class="box">
-                    <img src="../image/s-img-2.jpg" alt="Pizza">
-                    <h3>Pizza</h3>
-                    <div class="price"> $4.99/- -10.99/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="button"><i class="fas fa-trash"></i></a>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+    
+            <div class="box">
+                <img src="../image/s-img-2.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <div class="price"> $4.99/- -10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
-            
-                <div class="box">
-                    <img src="../image/s-img-3.jpg" alt="ice-cream">
-                    <h3>Ice-cream</h3>
-                    <div class="price"> $4.99/- -10.99/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="button"><i class="fas fa-trash"></i></a>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+    
+            <div class="box">
+                <img src="../image/s-img-3.jpg" alt="ice-cream">
+                <h3>Ice-cream</h3>
+                <div class="price"> $4.99/- -10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="box">
+                <img src="../image/s-img-4.jpg" alt="ice-cream">
+                <h3>Cold Drink</h3>
+                <div class="price"> $4.99/- -10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Buy Now</a>
             </div>
         </div>
-
-
-        <div class="filters summary">
-            <span style="font-size: 2rem;">Subtotal (3) items</span>
-            <span style="font-weight: 700; font-size: 2rem;">Total: ₹666</span>
-            <button type="button" class="cart-btn">Proceed to Checkout</button>
-        </div>
-    </div>
+    
+    </section>
+    
+    <!-- categories section ends -->
 
     <!-- Footer section starts -->
     <section class="footer">
@@ -137,5 +147,5 @@
     </section>
     
     <!-- Footer section ends -->
-</body>
-</html>
+
+  </body>  
