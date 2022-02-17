@@ -12,10 +12,11 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="https://wow-ui02.netlify.app/wowi.css">
-
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="https://wow-ui02.netlify.app/components/Card.css">
+
 
 </head>
 
@@ -68,39 +69,53 @@
 
         <h1 class="heading"> <span>50% OFF ON</span></h1>
 
-        <div class="box-container">
+        <div class="box-container" style="justify-content: center;">
 
-            <div class="box">
-                <img class="image" src="image/s-img-1.jpg" alt="burger">
-                <div class="content">
-                    <img src="image/s-1.png" alt="burger">
-                    <h3>tasty burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
-                        aperiam tempore libero labore aut.</p>
+            <div class="card card-ecom card-horiz">
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-1.jpg" alt="chocolate-momos" />
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">BURGER</h6>
+                        <p class="card-desc">Veg Cheese Burger</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.120</span>
+                            <span class="discount" style="font-size: 1.25rem;">(40%)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <img class="image" src="image/s-img-2.jpg" alt="pizza">
-                <div class="content">
-                    <img src="image/s-2.png" alt="pizza">
-                    <h3>tasty pizza</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
-                        aperiam tempore libero labore aut.</p>
+            <div class="card card-ecom card-horiz">
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-2.jpg" alt="chocolate-momos" />
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">PIZZA</h6>
+                        <p class="card-desc">Veg Cheese Pizza</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.120</span>
+                            <span class="discount" style="font-size: 1.25rem;">(40%)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <img class="image" src="image/s-img-3.jpg" alt="ice-cream">
-                <div class="content">
-                    <img src="image/s-3.png" alt="ice-cream">
-                    <h3>cold ice-cream</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates
-                        aperiam tempore libero labore aut.</p>
-                </div>
-            </div>
+
 
         </div>
+
+
 
     </section>
 
@@ -110,68 +125,93 @@
 
     <section class="products" id="products">
 
-        <h1 class="heading"> our <span>products</span> </h1>
+        <h1 class="heading" style="margin-top: 8rem;"> our <span>products</span> </h1>
 
-        <div class="swiper product-slider">
+        <div class="product-card">
 
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide box">
-                    <img src="image/s-img-1.jpg" alt="burger">
-                    <h3>Burger</h3>
-                    <div class="price"> $4.99/- - 10.99/- </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a>
+            <div class="card card-ecom mg-1-all">
+                <button class="btn secondary-text-btn-sm card-close"><i class="far fa-heart"></i></button>
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-1.jpg" alt="veg-momos" />
                 </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/s-img-2.jpg" alt="pizza">
-                    <h3>Pizza</h3>
-                    <div class="price"> $4.99/- - 10.99/- </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="card-badge">OFFER</div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">BURGER</h6>
+                        <p class="card-desc">Veg Cheese Burger</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.56</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="discount" style="font-size: 1.25rem;">(30%)</span>
+                        </div>
                     </div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/s-img-3.jpg" alt="Ice-cream">
-                    <h3>Ice Cream</h3>
-                    <div class="price"> $4.99/- - 10.99/- </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
                     </div>
-                    <a href="#" class="btn">add to cart</a>
                 </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/s-img-4.jpg" alt="cold-drink">
-                    <h3>Cold Drinks</h3>
-                    <div class="price"> $4.99/- - 10.99/- </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card card-ecom mg-1-all">
+                <button class="btn secondary-text-btn-sm card-close"><i class="far fa-heart"></i></button>
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-2.jpg" alt="veg-momos" />
+                </div>
+                <div class="card-badge">OFFER</div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">PIZZA</h6>
+                        <p class="card-desc">Veg Cheese Pizza</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.56</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="discount" style="font-size: 1.25rem;">(30%)</span>
+                        </div>
                     </div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
+                    </div>
                 </div>
-
+            </div>
+            <div class="card card-ecom mg-1-all">
+                <button class="btn secondary-text-btn-sm card-close"><i class="far fa-heart"></i></button>
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-3.jpg" alt="veg-momos" />
+                </div>
+                <div class="card-badge">OFFER</div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">ICE-CREAM</h6>
+                        <p class="card-desc">Cold Ice-Cream</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.56</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="discount" style="font-size: 1.25rem;">(30%)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-ecom mg-1-all">
+                <button class="btn secondary-text-btn-sm card-close"><i class="far fa-heart"></i></button>
+                <div class="card-img-cont">
+                    <img class="card-img" src="../image/s-img-4.jpg" alt="veg-momos" />
+                </div>
+                <div class="card-badge">OFFER</div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h6 class="card-title">JUICE</h6>
+                        <p class="card-desc">Fresh Juice</p>
+                        <div class="card-price">
+                            <span class="price-new" style="font-size: 1.25rem;">Rs.56</span>
+                            <span class="price-old" style="font-size: 1.25rem;">Rs.80</span>
+                            <span class="discount" style="font-size: 1.25rem;">(30%)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button btn-primary card-button">ADD TO CART</button>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -187,40 +227,23 @@
     <section class="footer">
 
         <div class="box-container">
-
             <div class="box">
-                <h3> Wow Shop <i class="fas fa-shopping-basket"></i> </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
+                <a href="https://twitter.com/MuskanChhatras1"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="https://github.com/MuskanChhatrasal"> <i class="fab fa-github"></i> Github </a>
+                <a href="https://www.linkedin.com/in/muskan-chhatrasal/"> <i class="fab fa-linkedin"></i> linkedin </a>
             </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#" class="links"> <i class="fas fa-envelope"></i> 123@gamil.com</a>
-                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> offer </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            </div>
-
         </div>
 
-        <div class="credit"> created by <span> Muskan </span> | all rights reserved </div>
+        <div class="credit"> by <span>Muskan</span> | all rights reserved </div>
 
     </section>
 
+
     <!-- footer section ends -->
-   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
