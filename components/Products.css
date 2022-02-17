@@ -154,7 +154,7 @@ a {
   text-decoration: none;
 }
 
-.product-card {
+/* .product-card {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5rem;
@@ -198,4 +198,4 @@ a {
   background-color: var(--primary-dark-color);
   color: var(--text-white);
   border: none;
-}
+} */
