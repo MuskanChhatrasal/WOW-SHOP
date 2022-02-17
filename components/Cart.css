@@ -12,11 +12,11 @@
 
 .productContainer .box-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 10rem;
-  gap: 2rem;
-  width: 72rem;
+  gap: 3rem;
+  margin-left: -15rem;
+  height: 20rem;
 }
 
 .productContainer .box-container .box {
