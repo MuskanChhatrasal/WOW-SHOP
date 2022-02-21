@@ -10,6 +10,7 @@ Live Preview: https://wow-shop06.netlify.app/
 
 HTML, CSS, JAVASCRIPT
 
+# DEMO VIDEO
 
 https://user-images.githubusercontent.com/76219453/155002116-b8cec50b-75b4-4aac-a91c-8bba382a3afb.mp4
 
